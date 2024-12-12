@@ -1,0 +1,1 @@
+https://aditya-3.gitbook.io/oscp/readme/privilege-escalation/windows - refer to list
