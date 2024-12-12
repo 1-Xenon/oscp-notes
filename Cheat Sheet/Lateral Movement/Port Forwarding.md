@@ -1,6 +1,5 @@
 Used to access machines that our host machine is unable to access in a topology but a machine that we managed to gain access to have access to
-Example:
-![[Pasted image 20240427112512.png]]
+
 ## Linux
 1st Way: socat
 ```
