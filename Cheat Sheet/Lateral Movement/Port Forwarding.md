@@ -20,10 +20,10 @@ for i in $(seq 1 254); do nc -zv -w 1 $ip $port; done (ONLY IF THERE ARE NO PORT
 
 ssh -N -L 0.0.0.0:4455:$ip:$port [user]@$ip2
 
-$ip is the machine you are trying to access (in below picture it is ????)
-$ip2 is the machine you can access creds (in below picture it is PGDATABASE01)
+$ip is the machine you are trying to access
+$ip2 is the machine you can access creds
 ```
-![[Pasted image 20240427115034.png]]
+
 ```
 Dynamic Port Forwarding
 first get the pty shell
