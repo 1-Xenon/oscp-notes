@@ -14,8 +14,3 @@ https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
 ```
 ' ORDER BY 1-- // (Verifying exact number of columns)
 ```
-
-Some examples done:
-medtech .121
-Pandora
-Soccer
